@@ -45,10 +45,15 @@ node{
 		
 		//--- Moving data files to matlab workspace
 		sh "cp -a $JENKINS_HOME/jobs/$JOB_NAME/workspace/. $JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_ID/$currentBuildName"
+		echo "1"
 		sh "mv $JENKINS_HOME/jobs/jb_BC-Vareta_simple-subject-data/builds/$build_ID/fileParameters/xml_data_descriptor.xml $JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_ID/$currentBuildName/data"
+		echo "2"
 		sh "mv $JENKINS_HOME/jobs/jb_BC-Vareta_simple-subject-data/builds/$build_ID/fileParameters/$eeg $JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_ID/$currentBuildName/data"
+		echo "3"
 		sh "mv $JENKINS_HOME/jobs/jb_BC-Vareta_simple-subject-data/builds/$build_ID/fileParameters/$leadfield $JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_ID/$currentBuildName/data"
+		echo "4"
 		sh "mv $JENKINS_HOME/jobs/jb_BC-Vareta_simple-subject-data/builds/$build_ID/fileParameters/$surface $JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_ID/$currentBuildName/data"
+		echo "5"
 		sh "mv $JENKINS_HOME/jobs/jb_BC-Vareta_simple-subject-data/builds/$build_ID/fileParameters/$scalp $JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_ID/$currentBuildName/data"
 		
   		//--- Starting ssh agent on Matlab server ---
