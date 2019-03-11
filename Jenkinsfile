@@ -37,7 +37,7 @@ node{
 	stage('DATA ACQUISITION'){
   		
   		 //--- Downloading BC-Vareta code from GitHub reporitory ---
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github_dbuedo-id', url: 'https://github.com/denysbuedo/BC_VaretaModel.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github_dbuedo-id', url: 'https://github.com/denysbuedo/Jenkins-pl_BC-Vareta_simple-subject.git']]])
   		
   		//--- Creating current matlab workspace
   		sh "mkdir $JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_ID/$currentBuildName"
