@@ -19,7 +19,7 @@ node{
   	
   	//--- Reading current job config ---
 	echo "Reading the job config"
-  	def job_config = readFile "$JENKINS_HOME/jobs/BC-Vareta/builds/QueueJobs/$xml_name"
+  	def job_config = readFile "$JENKINS_HOME/jobs/jb_BC-Vareta_simple-subject-data/builds/QueueJobs/$xml_name"
 	def parser = new XmlParser().parseText(job_config)
 	def job_name = "${parser.attribute("job")}"
 	def build_ID ="${parser.attribute("build")}"
