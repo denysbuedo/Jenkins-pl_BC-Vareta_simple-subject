@@ -20,7 +20,8 @@ if [[ $1 = 'run' ]];
   elif [[ $1 = 'clean' ]];
     then
     	cd /home/software_install_dir/MATLAB/R2018a/
-	rm -rf "/home/software_install_dir/MATLAB/R2018a/$7"
+	mv -f $7 Jenkins_Trash/
+	rm -rf Jenkins_Trash/
   else
       echo "Invalid action"
   fi
