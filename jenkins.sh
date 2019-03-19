@@ -13,11 +13,11 @@ if [[ $1 = 'run' ]];
       if [ -d "/data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2" ]
        then
 	  	   mv /home/software_install_dir/MATLAB/R2018a/$7.tar.gz /data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2
-	   	   rm -rf /home/software_install_dir/MATLAB/R2018a/$7
+	   	   rm -r /home/software_install_dir/MATLAB/R2018a/$7
        else
            mkdir /data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2
            mv /home/software_install_dir/MATLAB/R2018a/$7.tar.gz /data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2
-           rm -rf /home/software_install_dir/MATLAB/R2018a/$7
+           rm -r /home/software_install_dir/MATLAB/R2018a/$7
        fi
     else
       echo "Invalid action"
