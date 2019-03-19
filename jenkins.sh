@@ -21,7 +21,9 @@ if [[ $1 = 'run' ]];
     then
     	pwd
 	ls
-   	cd ..
+	cd /home/software_install_dir/MATLAB/R2018a/
+	pwd
+	ls
         rm -rf /home/software_install_dir/MATLAB/R2018a/$7
   else
       echo "Invalid action"
