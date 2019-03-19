@@ -21,7 +21,6 @@ if [[ $1 = 'run' ]];
     then
     	cd /home/software_install_dir/MATLAB/R2018a/
 	mv -f $7 Jenkins_Trash/
-	rm -rf Jenkins_Trash/*
   else
       echo "Invalid action"
   fi
