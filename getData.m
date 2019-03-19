@@ -4,9 +4,9 @@ function Jenkin_data = getData(field)
     clc
 
     %Load xml_data_descriptor file by OS.
-    xml_data_descriptor = 'data/xml_data_descriptor.xml';
+    xml_data_descriptor = 'data/data-descriptor.xml';
     if ispc
-        xml_data_descriptor = 'data\xml_data_descriptor.xml';
+        xml_data_descriptor = 'data\data-descriptor.xml';
     end
     xmlDoc = xmlread(xml_data_descriptor); 
  
