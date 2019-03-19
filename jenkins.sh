@@ -19,6 +19,8 @@ if [[ $1 = 'run' ]];
        fi
   elif [[ $1 = 'clean' ]];
     then
+    	pwd
+	ls
    	cd ..
         rm -rf /home/software_install_dir/MATLAB/R2018a/$7
   else
