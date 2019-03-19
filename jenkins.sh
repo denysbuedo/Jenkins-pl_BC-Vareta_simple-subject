@@ -1,14 +1,14 @@
 #!/bin/bash
 if [[ $1 = 'run' ]];
   then
-      cd /root/matlab/$7/
-      /usr/local/MATLAB/R2018a/bin/matlab -nodisplay < /root/matlab/$7/Main.m
+      cd /home/software_install_dir/MATLAB/R2018a/$7/
+      matlab -nodisplay < /home/software_install_dir/MATLAB/R2018a/$7/Main.m
   elif [[ $1 = 'test' ]];
     then
-      /usr/local/MATLAB/R2018a/bin/matlab -nodisplay < /root/matlab/$7/Main.m
+      matlab -nodisplay < /home/software_install_dir/MATLAB/R2018a/$7/Main.
   elif [[ $1 = 'delivery' ]];
     then
-      tar fcz /root/matlab/$7/$7.tar.gz --absolute-names /root/matlab/$7/result/
+      tar fcz /home/software_install_dir/MATLAB/R2018a/$7/$7.tar.gz --absolute-names /home/software_install_dir/MATLAB/R2018a/$7/result/
       if [ -d "/media/DATA/FTP/Matlab/BC-Vareta/$2" ]
        then
 	  	   mv /root/matlab/$7/$7.tar.gz /media/DATA/FTP/Matlab/BC-Vareta/$2
