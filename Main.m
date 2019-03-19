@@ -20,10 +20,10 @@ clc;
 close all;
 
 % Get current OS, data and result folder
-resultFolderByOS = '/result/';
+resultFolderByOS = '/results/';
 dataFolderBySO = 'data/';
 if ispc
-    resultFolderByOS = '\result\'; 
+    resultFolderByOS = '\results\'; 
     dataFolderBySO = 'data\';
 end 
 
