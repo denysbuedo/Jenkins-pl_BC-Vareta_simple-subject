@@ -9,14 +9,14 @@ if [[ $1 = 'run' ]];
 	  matlab -nodisplay < /home/software_install_dir/MATLAB/R2018a/$7/Main.
   elif [[ $1 = 'delivery' ]];
     then
-      tar fcz /home/software_install_dir/MATLAB/R2018a/$7/$7.tar.gz --absolute-names /home/software_install_dir/MATLAB/R2018a/$7/results/
+      tar fcz /home/software_install_dir/MATLAB/R2018a/$7.tar.gz --absolute-names /home/software_install_dir/MATLAB/R2018a/$7/results/
       if [ -d "/data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2" ]
        then
-	  	   mv /home/software_install_dir/MATLAB/R2018a/$7/$7.tar.gz /data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2
+	  	   mv /home/software_install_dir/MATLAB/R2018a/$7.tar.gz /data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2
 	   	   rm -rf /home/software_install_dir/MATLAB/R2018a/$7
        else
            mkdir /data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2
-           mv /home/software_install_dir/MATLAB/R2018a/$7/$7.tar.gz /data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2
+           mv /home/software_install_dir/MATLAB/R2018a/$7.tar.gz /data3_260T/DATA/Datasets/Data_Proccesaded/BC-Vareta/$2
            rm -rf /home/software_install_dir/MATLAB/R2018a/$7
        fi
     else
